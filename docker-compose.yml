@@ -1,0 +1,10 @@
+cgminer-v:
+    build: .
+    environment:
+        # Please replace these to suit your needs
+        - URL=stratum+tcp://YOUR_POOL_NAME:PORT
+        - USERNAME=USERNAME_HERE
+        - PASSWORD=PASSWORD_HERE
+        - DIFF=DIFFICULTY_HERE
+    net: "host"
+    privileged: true
